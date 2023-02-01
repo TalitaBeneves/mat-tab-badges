@@ -31,6 +31,7 @@ export class TabGroupBasicExample implements OnInit {
   }
 
   tabIndex(e) {
+    this.teste = e;
     if (e.index == 1) {
       this.quantidade = this.cars.length;
     }
@@ -38,6 +39,7 @@ export class TabGroupBasicExample implements OnInit {
       const nav = document.querySelector('.mat-badge-content');
       nav.remove();
     }
+    console.log(e);
     //mat-badge-content mat-badge-active
   }
 }

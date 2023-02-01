@@ -4,3 +4,7 @@
   background: #f44336;
   display: none;
 }
+
+::ng-deep.mat-tab-label-active {
+  opacity: 1 !important;
+}
