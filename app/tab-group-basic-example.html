@@ -1,4 +1,4 @@
-<mat-tab-group  (selectedTabChange)="tabIndex($event)">
+<mat-tab-group (selectedTabChange)="tabIndex($event)">
   <mat-tab>
     <ng-template matTabLabel>
       <span
@@ -13,11 +13,11 @@
   <mat-tab label="Second">
     <ng-template matTabLabel>
       <span
+        [matBadge]="quantidade"
         matBadgeOverlap="false"
         cdkFocusInitial
         matBadgeColor="warn"
         i18n-label="@@Edit"
-        [matBadge]="quantidade"
       >
         Content 1</span
       >

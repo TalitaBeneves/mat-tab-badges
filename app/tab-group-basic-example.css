@@ -1,9 +1,4 @@
 /** No CSS for this example */
-::ng-deep .mat-badge-warn .mat-badge-content {
-  color: #fff;
-  background: #f44336;
-  display: none;
-}
 
 ::ng-deep.mat-tab-label-active {
   opacity: 1 !important;

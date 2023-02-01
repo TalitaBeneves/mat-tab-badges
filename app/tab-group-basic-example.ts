@@ -27,6 +27,9 @@ export class TabGroupBasicExample implements OnInit {
   quantidade;
   teste;
   ngOnInit(): void {
+    if (this.cars.length == 0) {
+      return;
+    }
     this.quantidade = this.cars.length;
   }
 
@@ -39,7 +42,6 @@ export class TabGroupBasicExample implements OnInit {
       const nav = document.querySelector('.mat-badge-content');
       nav.remove();
     }
-    console.log(e);
     //mat-badge-content mat-badge-active
   }
 }
